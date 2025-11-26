@@ -92,6 +92,12 @@ namespace PJ_DREAM
                 btnChoice3.Tag = Dgame.choicnextIndex[2];// เก็บ index ถัดไปไว้ใน tag
                 btnChoice3.Visible = true;//ปุ่มทำงาน
             }
+            if (Dgame.choiceText.Count > 2) //ถ้ามี 3 ตัวเลือก
+            {
+                btnChoice3.Text = Dgame.choiceText[2]; // เอาข้อความ choice ตัวที่สองมาใส่
+                btnChoice3.Tag = Dgame.choicnextIndex[2];// เก็บ index ถัดไปไว้ใน tag
+                btnChoice3.Visible = true;//ปุ่มทำงาน
+            }
         }
 
         private void LogText() // ฟังก์ชั่นเก็บบทพูดที่พูดไปแล้ว
